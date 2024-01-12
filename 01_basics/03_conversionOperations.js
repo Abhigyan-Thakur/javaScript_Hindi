@@ -14,3 +14,8 @@ console.log(typeof(convToBool));
 console.log(convToBool);
 
 // 1=> bollean true
+let someNumber=33
+let stringNumber=String(someNumber);
+console.log(typeof stringNumber);
+console.log(stringNumber);
+// 33=> string 33
