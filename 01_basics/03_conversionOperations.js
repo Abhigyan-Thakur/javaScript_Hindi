@@ -19,4 +19,3 @@ let stringNumber=String(someNumber);
 console.log(typeof stringNumber);
 console.log(stringNumber);
 // 33=> string 33
-// finished
