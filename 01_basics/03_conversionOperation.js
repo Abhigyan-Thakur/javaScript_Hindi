@@ -20,3 +20,12 @@ console.log(typeof stringNumber);
 console.log(stringNumber);
 // 33=> string 33
 console.log(1+8+"5")
+
+let num1,num2,num3
+num1=num2=num3=4+9
+console.log(num1)
+
+let gameplay=9
+let y=++gameplay
+
+console.log(gameplay,y);
