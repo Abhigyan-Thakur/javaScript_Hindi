@@ -19,3 +19,4 @@ let stringNumber=String(someNumber);
 console.log(typeof stringNumber);
 console.log(stringNumber);
 // 33=> string 33
+console.log(1+8+"3");
