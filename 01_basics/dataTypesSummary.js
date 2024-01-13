@@ -4,6 +4,10 @@ const data1 = 12;
 const data2 = "ksdj";
 const data3 = false;
 const data4 = null;
+
+console.log(data4);
+const data7 = undefined
+console.log(data7)
 // Here in all u can see that we are not definig the dataTypes like we do in another lang
 const data5 = Symbol('123')
 const data6 = Symbol('123')
@@ -35,3 +39,23 @@ const func_var = function func() {
 
 console.log("type is ", typeof bigNumber);
 console.log("type is ", typeof obj);
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack{primitive data Type} ,heap(non-primitive data_Type)
+
+let myYoutubeName = "amanajsdhjsbd"
+let anothername = myYoutubeName;
+anothername = "ksd";
+console.log(anothername);
+console.log(myYoutubeName);
+
+let userOne = {
+    email: "user@gmail",
+    age: 23,
+}
+
+let userTwo = userOne;
+userTwo.age = 90;
+console.log(userOne)
