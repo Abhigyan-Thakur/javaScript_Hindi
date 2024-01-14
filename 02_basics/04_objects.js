@@ -42,7 +42,27 @@ const obj100 = { obj10, obj20 }
 const obj200 = { ...obj10, ...obj20, ...obj30 }
 // console.log(obj200)
 
+nObject.isLoggedIn = false;
+// console.log(nObject)
 
 //we can retreive the keys and values of tinderUser here from the objects using object.keys(Object_name)
-console.log(Object.keys(nObject));
-console.log(Object.values(nObject));
+// console.log(Object.keys(nObject));
+// console.log(Object.values(nObject));
+// console.log(Object.entries(nObject));
+// console.log(nObject.hasOwnProperty('isLoggedIn'));
+
+
+//OBJECT_DESTRUCTURE
+
+const news = {
+    name: "anaks",
+    age: 12,
+    invigilatorName: 'Hitesh Sharma'
+}
+// console.log(news.invigilatorName);
+// console.log(news.invigilatorName);
+// console.log(news.invigilatorName);//here if we want the same data again so for that destructring is the best way
+
+const { invigilatorName: IN } = news;// Here is how we destructure the key from the object
+// console.log(invigilatorName);
+// console.log(IN);
