@@ -21,3 +21,22 @@ mapObj2.set('k3', 'v3');
 for (const key in mapObj2) {//keys and values can't be retreived from map object using 
     console.log(key);
 }
+
+
+const myCoding = [
+    {
+        languageName: "javascript",
+        languageFileName: "js"
+    },
+    {
+        languageName: "javashjgcript",
+        languageFileName: "ph"
+    },
+
+]
+myCoding.forEach((item) => {
+    console.log(item.languageName);
+
+})
+
+// create six.js and try to retreive data by using filter method( try using explicit return and return also)
