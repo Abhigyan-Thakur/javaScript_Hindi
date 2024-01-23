@@ -1,4 +1,4 @@
-// iffi: iffi is used to meet two purpose 1>iffi is used to remove the pollution(variables) of global scope 
+// iffi: iffi is used to meet two purposes 1>iffi is used to remove the pollution(variables) of global scope 
 // 2>iffi is used for fast function execution
 (function chai() {
     console.log("DB Connected");

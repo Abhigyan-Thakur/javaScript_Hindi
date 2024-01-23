@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+
+<body style="background-color: #212121; color: aliceblue;">
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <h1 id="one">Hero_One</h1>
+            </li>
+            <li>
+                <h1 id="two">Hero_Two</h1>
+            </li>
+            <li>
+                <h1 id="three">Hero_Three</h1>
+            </li>
+            <li>
+                <h1 id="four">Hero_Four</h1>
+            </li>
+            <li><a style="color: white;" id="google" href="https://google.com">Google</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    //onclick this is good but we get less features
+    //     alert("owl clicked")
+    // }
+
+    // addEventListener is used 
+    // document.getElementById('one').addEventListener('click', function (e) {//this is the best approach in which we use addEventListner and alost all the features when event is passed
+    //     alert("one is clicked")
+    //     console.log(e)//here e is the event in which we get all the features 
+    // })
+    //below are the features we can use and get in event
+    //type,timestamp,defaultPrevented
+    // target,toElement,src(most imp)
+    // clintX,clientY,screenX,screenY
+
+    //here we will create to addEventListner on for ul and another for a list,also use stopPropagation()
+    // document.getElementById('images').addEventListener('click', function () {
+    //     console.log("ul is clicked");
+    // }, false)//here as false is clicked this eans that event propagation is of bubbling format(in bubbling 1st inner eventcontent is shown)
+    // document.getElementById('three').addEventListener('click', function (e) {
+    //     console.log('three is clicked');
+    //     e.stopPropagation();//this will stop the outer event from being called
+    // }, false)
+    // //here using addeventlistner
+    // document.getElementById('google').addEventListener('click', function (e) {
+    //     e.preventDefault();//her eusing prevent default can stop the google search engine page from opening
+    // })
+    //here using quickSelector,event of a clicked image or text we need to remove the respective
+    document.querySelector('#images').addEventListener('click', function (e) {
+        console.log(e.target.tagName);
+
+        if (e.target.tagName === 'H1') {
+            const removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
+    })
+</script>
+
+</html>

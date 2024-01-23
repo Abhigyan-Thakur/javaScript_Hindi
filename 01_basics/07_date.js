@@ -23,9 +23,10 @@ console.log(newDate.getDate());
 console.log(newDate.getHours());
 console.log(newDate.getMinutes());
 console.log(newDate.toLocaleString())
-console.log(newDate.toLocaleString('default', {
+console.log(newDate.toLocaleString('default', {//like this we can coustomize toLocaleString method in a way that we get the desired output
     weekday: "long"
 }))
+
 
 
 

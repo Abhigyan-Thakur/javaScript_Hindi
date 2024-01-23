@@ -1,6 +1,6 @@
 // assign an array with some values
 // now retreive the val using for of loop (Note-it works on arrays,string and object also)
-// create a map object, assig some values using map.set() , and use forof loop,simply console.log(map) to retreive data
+// create a map object, assig some values using map.set() , and use forof loop,simply console.log(map_objectName) to retreive data
 
 const A = [1, 2, 3, 45, 46];
 for (const iterator of A) {

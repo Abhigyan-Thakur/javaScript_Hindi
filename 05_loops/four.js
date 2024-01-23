@@ -45,5 +45,3 @@ myCoding.forEach((item) => {
 // create seven.js use map method to retreive data from array 25:00 filtermap
 // do chaining means map method chainig 
 
-
-create

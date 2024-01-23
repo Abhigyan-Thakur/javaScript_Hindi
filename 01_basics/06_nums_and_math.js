@@ -53,3 +53,4 @@ console.log(Math.floor(Math.random() * 10) + 1);
 const max = 10;
 const min = 20;
 console.log(Math.floor((Math.random() * (max - min)) + min));
+

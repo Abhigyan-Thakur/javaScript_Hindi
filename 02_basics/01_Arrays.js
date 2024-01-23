@@ -27,3 +27,4 @@ console.log(myArr);
 
 console.log(myArr.splice(1, 3))  // while in splice the range is included and the 2nd point/diff is it mutates the original array and we can see it
 console.log(myArr);
+

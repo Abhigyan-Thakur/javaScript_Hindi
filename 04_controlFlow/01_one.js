@@ -103,3 +103,4 @@ console.log(bazz);
 const num22 = 23;
 const v = num22 > 20 ? 'greater' : 'smaller';
 console.log(v);
+

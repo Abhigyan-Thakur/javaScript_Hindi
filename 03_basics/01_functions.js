@@ -68,4 +68,3 @@ console.log(callUserPostDetails({
     name: "Hitesh Raj",
     price: 90909,
 }));//we can pass newly defined object to the function
-

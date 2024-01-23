@@ -1,7 +1,8 @@
 // 1.Singleton Objects
-// Object.create
+// eg:-const object_name=new Object();
 
 // 2.Literal Objects
+
 // .operator,squareNotation
 //create an object having key of string type and try to retrieve
 //try to get symbol type key in the object and retreive it
