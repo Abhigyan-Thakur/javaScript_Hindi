@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM || Chai aur code</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.body');
+    // console.log(parent.children[1].innerHTML);
+    // for (let i = 0; i < parent.children.length; i++) {//here parent.children.length will give the total length
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    // parent.children[1].style.color = "orange";
+    // console.log(parent.firstElementChild);//to get the first child of parent
+    // console.log(parent.lastElementChild);//to get last child of parent
+    const dayOne = document.querySelector('.day');
+    console.log(dayOne);
+    console.log(dayOne.parentElement);// to derive the parent name of the child dayOne
+    console.log(dayOne.nextElementSibling)//to know the next element's value of the current dayOne value  
+    console.log("Nodes", parent.childNodes);//here childNodes
+</script>
+
+</html>
