@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM || 4rth</title>
+</head>
+
+<body style="background-color: #212121;color: aliceblue;">
+    <ul class="language">
+        <li>javaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {//this is a function in which we have used li.innerHTML here the process is not so optimiged as here always the whole ul list is transversed to reach the last li and then a new list is added
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("java");
+    addLanguage("kja");
+    function addOptiLanguage(langName) {//but here list is not transversed to implement the new list as here createTextNode is used so this is an optimised way to use in vast and basic projects also
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))//so insoite of using li.innerHTML we should use appendChild for better optimisation
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('Java');
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"//but we mentioned earlier that innerHTML is not preffered as optimized 
+    const newli = document.createElement("li");//here a new list is created 
+    newli.textContent = "Mojo";//in the new list data is assigned
+    secondLang.replaceWith(newli);//then in place of the old list new list is set using replacewith method
+
+    //edit
+    const firstChild = document.querySelector('li:first-child')
+    firstChild.outerHTML = '<li>TypeScript</li>'
+    //remove
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();//here last list is removed
+
+</script>
+
+</html>
